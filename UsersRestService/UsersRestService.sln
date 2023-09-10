@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersRestService", "UsersRestService.csproj", "{55531935-5789-42EE-AF5D-5BFB9B546176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRestService.Tests", "..\UserRestService.Tests\UserRestService.Tests.csproj", "{5E803990-543D-4B32-B1F0-D486AF601F3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserRestService.Tests", "..\UserRestService.Tests\UserRestService.Tests.csproj", "{5E803990-543D-4B32-B1F0-D486AF601F3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
