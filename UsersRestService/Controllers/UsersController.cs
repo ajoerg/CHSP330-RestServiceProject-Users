@@ -5,18 +5,26 @@ using UsersRestService.Models;
 
 namespace UsersRestService.Controllers
 {
+
+    /// <summary>
+    /// This allows operations on User objects
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+    [Authenticator]
     public class UsersController : ControllerBase
     {
         public static List<User> users = new List<User>();
 
-
+        /// <summary>
+        /// Get All Users
+        /// </summary>
+        /// <returns>List of Users</returns>
         // GET: api/<UsersController>
         [HttpGet]
-        public IEnumerable<User> Get()
+        public IActionResult Get()
         {
-            return users;
+            return Ok(users);
         }
 
         // GET api/<UsersController>/5
@@ -30,7 +38,7 @@ namespace UsersRestService.Controllers
             }
             catch (InvalidOperationException ex)
             {
-                return NotFound();
+                return NotFound(new ApiResponse(404, $"No User exists with id: {id}"));
             }
         }
 

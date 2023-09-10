@@ -1,5 +1,8 @@
 ﻿namespace UsersRestService.Models
 {
+    /// <summary>
+    /// This is the User data object
+    /// </summary>
     public class User
     {
         public int Id { get; set; }
